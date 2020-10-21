@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+#breadcrumb {
+	background: rgb(20, 20, 20);
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+	color: #fff;
+	border-radius: 5px;
+	padding: 5px;
+	text-transform: uppercase;
+	margin: 20px auto;
+	margin-bottom: -50px;
+}
+.breadcrumb h1 {
+	text-transform: uppercase;
+}
+.cookbook-main {
+	width: 80%;
+	margin: 10px auto;
+	display: flex;
+	border: 1px solid rgb(223, 219, 219);
+	border-radius: 3px;
+	height: 62vh;
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.cookbook-main .desc-section {
+	width: 60%;
+	padding: 7px;
+}
+
+.cookbook-main .desc-section .heading {
+	text-transform: uppercase;
+	margin: 20px auto;
+	font-family: 'Architects Daughter', cursive;
+	letter-spacing: 1px;
+}
+
+.cookbook-main .desc-section .cookbook-text {
+	text-transform: capitalize;
+	margin: 20px 0;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	color: rgb(80, 79, 79);
+}
+
+.cookbook-main .desc-section p {
+	color: rgb(102, 97, 97);
+	margin: 20px 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cookbook-main .desc-section button {
+	border: none;
+	background: rgb(31, 30, 30);
+	color: rgb(231, 222, 222);
+	padding: 10px 20px;
+	text-transform: uppercase;
+	border-radius: 2px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+.cookbook-main .desc-section button:hover {
+	background: rgb(61, 59, 59);
+}
+
+.cookbook-main .img-section {
+	width: 40%;
+}
+
+.cookbook-main .img-section img {
+	width: 100%;
+	height: 100%;
+	border-radius: 3px;
+}

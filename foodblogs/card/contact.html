@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+<style>
+  /*contact us styling*/
+      .container{
+        text-align: center;
+        width: 100%;
+        padding: 1%;
+      }
+
+  /* Add a background color and some padding around the form */
+
+  header{
+    background: rgb(48, 117, 42);
+  }
+
+  header .nav-links li a{
+    color: white;
+  }
+
+  .form {
+    width: 60%;
+    padding: 15px;
+    background: rgba(0,0,0,.9);
+    color: white;
+    border-radius: 3px;
+  }
+
+  #contact-us-head{
+    background: black;
+    color: white;
+    width: 100%;
+    padding: 7px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 3px;
+  }
+
+  /* Style inputs with type="text", select elements and textareas */
+    input[type=text], select , textarea{
+      width: 100%; 
+      resize: vertical;
+      padding: 7px 0;
+      border:none;
+      border-radius: 4px;
+      margin: 5px 0;
+  }
+  input[type=text], select{
+    height: 45px;
+  }
+
+  
+  /* Style the submit button with a specific background color etc */
+  #contact-submit {
+    background: #2e7a30;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;   
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  #contact-submit:hover {
+    background-color: #0b490f;
+  }
+
+  @media (max-width: 600px){
+    .form {
+    width: 94%;
+  }
+  }
+  </style>
+</head>
+<body>
+  <header class = "social-link">
+    <div class = 'social-links'>
+        <li><i class="fa fa-facebook"></i></li>
+        <li><i class="fa fa-twitter"></i></li>
+        <li><i class="fa fa-instagram"></i></li>
+        <li><i class="fa fa-linkedin"></i></li>
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="search..">
+        <button><i class="fa fa-search"></i></button>
+    </div>
+    
+    <div class="join-us">
+        <a href="#">login</a> <span style = "color: white"> / </span>
+        <a href="#">register</a>
+    </div>
+</header><br><br><br><br>
+
+<header>
+  <img class="logo" src="foodblogimg/logo.jpg" alt="LOGO" />
+    <nav>
+        <ul class = "nav-links">
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "about.html">About Us</a></li>
+            <li><a href = "recipes.html">Recipe</a></li>
+            <li><a href = "cookbook.html">Cook Book</a></li>
+        </ul>
+    </nav>
+    <a class = "cta" href = "contact.html"><button id = "contact-us" onclick = "sayHello()">Contact Us</button></a>
+</header><br><br><br><br>
+
+
+    <body>
+     
+        <!-- contact nesecessary items -->
+        <div class="container" >
+            <form class = "form">
+              <h2 id = "contact-us-head">Contact Us Form</h2>
+              <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+          
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+              <input type="text" id="E-mail" name="E-mail" placeholder="Your E-mail..">
+          
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="usa">USA</option>
+                <option value="nepal" selected>Nepal</option>
+              </select>
+
+              <textarea id="Comment" name="Comment" placeholder="Message.." rows = 10 ></textarea>
+          
+              <button type = "submit" id = "contact-submit">Submit</button>
+              <span>Feel free to contact us. </span>
+            </form>
+
+          </div>
+
+              <!-- footer -->
+    <div class="footer">
+      <div class="footer-content">
+          <div class="footer-section about">
+              <h1 class = "logo-text"><span>World Food</span> Blog</h1>
+              <p>
+                  “This above all: to thine own self be true,
+                  And it must follow, as the night the day,
+                  Thou canst not then be false to any man.” <br><br>
+                  “This above all: to thine own self be true,
+                  And it must follow, as the night the day,
+                  Thou canst not then be false to any man.”
+              </p>
+
+              <div class="contact">
+                  <span><i class="fa fa-phone"></i> &nbsp; 123-456-7890</span>
+                  <span><i class="fa fa-envelope"></i> &nbsp; info@worldfoodblog.com</span>
+              </div>
+
+              <div class="socials">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+              </div>
+          </div>
+
+          <div class="footer-section links">
+              <h2>Quick Links</h2>
+              <br>
+              <ul>
+                  <li><a href = "index.html">Home</a></li>
+                  <li><a href = "about.html">About Us</a></li>
+                  <li><a href = "recipes.html">Recipe</a></li>
+                  <li><a href = "cookbook.html">Cook Book</a></li>
+                  <li><a href = "#">Terms and Condition</a></li>
+              </ul>
+          </div>
+
+          <div class="footer-section contact-form">
+              <h2>SUBSCRIBE</h2>
+              <br>
+              <form action="#" method = "post">
+                  <input type="email" name = "email" class = "text-input contact-input" placeholder = "Your email address...">
+                  <button type = "submit" class = "btn btn-big">subscribe</button>
+              </form>
+          </div>
+      </div>
+
+      <div class="footer-bottom">
+          &copy; 2020 | Designed by WFB
+      </div>
+  </div>
+
